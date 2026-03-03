@@ -1,0 +1,645 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* .swiper {
+  overflow: hidden;
+}
+
+.swiper-wrapper {
+  overflow: hidden;
+}
+
+.swiper-slide {
+  overflow: hidden;
+  padding-top: 20px; 
+} */
+
+/* 
+.swiper {
+  overflow: visible !important;
+}
+
+.swiper-wrapper {
+  overflow: visible !important;
+}
+
+.swiper-slide {
+  overflow: visible !important;
+} 
+.swiper,
+.swiper-wrapper,
+.swiper-slide {
+  overflow: visible !important;
+} */
+
+/* body{
+  background: linear-gradient(
+    to bottom,
+    #1e3c72,   
+    #408A5E,   
+    #6dd5fa    
+  );
+} */
+
+html{
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem 0rem;
+}
+h6{
+  font-family: Poppins;
+font-weight: 500;
+font-style: Medium;
+font-size: 24px;
+leading-trim: NONE;
+line-height: 100%;
+letter-spacing: 0%;
+text-align: center;
+vertical-align: middle;
+text-transform: capitalize;
+color:  #1D3E2A;
+}
+#navbar-sticky ul{
+  font-family: Poppins;
+font-weight: 700;
+font-style: Bold;
+font-size: 16px;
+leading-trim: NONE;
+line-height: 100%;
+letter-spacing: 0%;
+text-align: center;
+vertical-align: middle;
+color:  #265338;
+cursor: pointer;
+}
+nav button{
+  font-family: Poppins;
+font-weight: 700;
+font-style: Bold;
+font-size: 16px;
+leading-trim: NONE;
+line-height: 100%;
+letter-spacing: 0%;
+text-align: center;
+vertical-align: middle;
+color: white;
+}
+/*    ..............   ....  cards home .........  ...............    */
+/* .services {
+  padding: 80px 0;
+  background: #f5f5f5;
+} */
+
+.home h1{
+font-family: Poppins;
+font-weight: 700;
+font-style: Bold;
+font-size: 48px;
+leading-trim: NONE;
+line-height: 4.8rem;
+letter-spacing: 0%;
+vertical-align: middle;
+text-transform: uppercase;
+color:  #1D3E2A;
+padding: 15px 0;
+}
+.home p{
+font-family: Poppins;
+font-weight: 500;
+font-style: Medium;
+font-size: 24px;
+leading-trim: NONE;
+line-height: 100%;
+letter-spacing: 0%;
+vertical-align: middle;
+text-transform: capitalize;
+color:  #3A7C55;
+padding: 20px 0 35px 0px;
+
+} 
+
+.title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 50px;
+  color: #222;
+}
+/* 
+.slider-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+} */
+
+.card {
+  height: 360px;
+  background: #fff;
+  border-radius: 10px;
+
+}
+
+.services-section {
+  position: relative;
+  padding: 40px 0;
+
+}
+
+/* الكارد */
+.slide-inner{
+  padding-top: 20px;
+}
+
+.father {
+  cursor: pointer;
+  transition: transform 0.8s ease;
+  /* transform-origin: center ; */
+  box-shadow: 0.8s ease;
+}
+.father.is-disabled{
+  cursor: not-allowed;
+  /* pointer-events: none;
+  transform: none;
+  box-shadow: none; */
+}
+
+.service-card {
+  height: 600px;
+  border-radius: 20px;
+  background-size: cover;
+  background-position: center;
+  position: relative; 
+   overflow: hidden;
+
+}
+
+
+
+.father:hover {
+  transform: translateY(-16px);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
+}
+
+
+
+
+/* Overlay */
+.service-card.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+}
+
+/* المحتوى الأبيض */
+.card-content {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 14px;
+  width: 85%;
+  text-align: center;
+  z-index: 5;
+}
+
+.card-content h1 {
+  font-family: Poppins;
+font-weight: 700;
+font-style: Bold;
+font-size: 24px;
+leading-trim: NONE;
+line-height: 100%;
+letter-spacing: 0%;
+text-align: center;
+vertical-align: middle;
+text-transform: capitalize;
+color: #12491E;
+margin-bottom: 12px;
+
+}
+
+.card-content p {
+  font-family: Poppins;
+font-weight: 400;
+font-style: Regular;
+font-size: 16px;
+leading-trim: NONE;
+line-height: 100%;
+letter-spacing: 0%;
+text-align: center;
+vertical-align: middle;
+color: #408A5E;
+
+}
+/* المحتوى الأبيض */
+
+
+/* الأسهم فوق */
+.slider-arrows {
+  position: absolute;
+  top: 180px;
+  right: 10px;
+  display: flex;
+  gap: 10px;
+  z-index: 10;
+}
+
+.slider-arrows button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background: #3A7C55;
+
+  color: #fff;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.slider-arrows button:hover {
+  background: #163b2f;
+}
+
+.contex {
+  text-align: left;
+}
+
+.contex h1 {
+  font-family: Inter;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 64px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  text-transform: capitalize;
+  color: #12491E;
+  padding: 30px 0px;
+
+
+}
+
+.pop {
+  position: relative;
+  padding-left: 12px;
+  color: #B0B0AC;
+  font-family: Poppins;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 24px;
+  leading-trim: NONE;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  text-transform: capitalize;
+
+  ;
+}
+
+.pop::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  background-color: green;
+  border-radius: 50%;
+}
+
+.icons{
+  color: #306847;
+width: 32px;
+height: 32px;
+padding-bottom: 10px;
+opacity: 1;
+font-size: 28px;
+}
+
+/*    ..............   ....  cards home .........  ...............    */
+
+
+
+
+/*    ..............   ....  Form .........  ...............    */
+
+
+.text-form h1 {
+  font-family: Poppins;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 48px;
+  leading-trim: NONE;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: capitalize;
+  color: #1D3E2A;
+  padding: 10px 0px;
+
+}
+
+.text-form p {
+  font-family: Poppins;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 24px;
+  leading-trim: NONE;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: capitalize;
+  color: #3A7C55;
+  padding: 15px 0px;
+
+}
+/*    ..............   ....  Form .........  ...............    */
+
+
+/*    ..............   ....  SPACE .........  ...............    */
+.space h1 {
+  font-family: Poppins;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 48px;
+  leading-trim: NONE;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: capitalize;
+  color: #FCFCFB;
+
+}
+
+/*    ..............   ....  SPACE .........  ...............    */
+
+
+
+
+/*    ..............   ....  FOOTER .........  ...............    */
+
+.logo img {
+width: 162px;
+height: 59px;
+width: 50%;
+  
+
+}
+
+.logo p {
+  font-family: Poppins;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 22.5px;
+  leading-trim: NONE;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  text-transform: capitalize;
+  margin-bottom: 60px;
+
+}
+
+.footer h2{
+  font-family: Poppins;
+font-weight: 700;
+font-style: Bold;
+font-size: 32px;
+leading-trim: NONE;
+line-height: 100%;
+letter-spacing: 0%;
+vertical-align: middle;
+text-transform: capitalize;
+}
+/* .footer li{
+  font-size: 30px;
+  color: #12491E;
+} */
+/*    ..............   ....  FOOTER .........  ...............    */
+
+
+
+/*    ..............   ....  product .........  ...............    */
+
+.cards p{
+  font-family: Poppins;
+font-weight: 500;
+font-style: Medium;
+font-size: 24px;
+leading-trim: NONE;
+line-height: 100%;
+letter-spacing: 0%;
+vertical-align: middle;
+text-transform: capitalize;
+color: #265338;
+
+}
+.cards h1{
+ font-family: Inter;
+font-weight: 700;
+font-style: Bold;
+font-size: 64px;
+leading-trim: NONE;
+line-height: 100%;
+letter-spacing: 0%;
+vertical-align: middle;
+text-transform: capitalize;
+color: black;
+
+
+}
+.cards h3{
+font-family: Poppins;
+font-weight: 500;
+font-style: Medium;
+font-size: 24px;
+leading-trim: NONE;
+line-height: 100%;
+letter-spacing: 0%;
+vertical-align: middle;
+text-transform: capitalize;
+color: #BFAC62;
+}
+.cards span{
+  color:#BFAC62;
+}
+.cards ul{
+    font-family: Poppins;
+font-weight: 500;
+font-style: Medium;
+font-size: 24px;
+leading-trim: NONE;
+line-height: 100%;
+letter-spacing: 0%;
+vertical-align: middle;
+text-transform: capitalize;
+color: #265338;
+}
+.cards h4{
+  font-family: Poppins;
+font-weight: 600;
+font-style: SemiBold;
+font-size: 24px;
+leading-trim: NONE;
+line-height: 100%;
+letter-spacing: 0%;
+vertical-align: middle;
+text-transform: capitalize;
+color:  #3A7C55;
+;
+}
+/*    ..............   ....  product .........  ...............    */
+
+
+/*    ..............   ....  Blog .........  ...............    */
+
+.textblog h1{
+  text-align: center;
+  font-family: Poppins;
+font-weight: 700;
+font-style: Bold;
+font-size: 72px;
+leading-trim: NONE;
+line-height: 100%;
+letter-spacing: 0%;
+text-align: center;
+vertical-align: middle;
+text-transform: uppercase;
+color:  #408A5E;
+padding: 6px 0px;
+color:  #265338;
+
+
+}
+
+.textblog p{
+  text-align: center;
+  font-family: Poppins;
+font-weight: 600;
+font-style: SemiBold;
+font-size: 24px;
+leading-trim: NONE;
+line-height: 100%;
+letter-spacing: 0%;
+text-align: center;
+vertical-align: middle;
+text-transform: capitalize;
+color:  #408A5E;
+padding: 20px 0px 30px 0px;
+;
+}
+
+
+.textcardblog h3{
+font-family: Poppins;
+font-weight: 700;
+font-style: Bold;
+font-size: 24px;
+leading-trim: NONE;
+line-height: 100%;
+letter-spacing: 0%;
+vertical-align: middle;
+text-transform: capitalize;
+color:  #265338;
+
+}
+.textcardblog h6{
+font-family: Poppins;
+font-weight: 500;
+font-style: Medium;
+font-size: 24px;
+leading-trim: NONE;
+line-height: 100%;
+letter-spacing: 0%;
+text-transform: capitalize;
+color:  #C4DBCD;
+
+}
+.textcardblog p{
+font-family: Poppins;
+font-weight: 400;
+font-style: Regular;
+font-size: 16px;
+leading-trim: NONE;
+line-height: 100%;
+letter-spacing: 0%;
+color:  #408A5E;
+
+}
+
+/*    ..............   ....  Blog .........  ...............    */
+
+#why h1{
+font-family: Poppins;
+font-weight: 700;
+font-style: Bold;
+font-size: 48px;
+leading-trim: NONE;
+line-height: 100%;
+letter-spacing: 0%;
+text-align: center;
+vertical-align: middle;
+text-transform: capitalize;
+color:  #1D3E2A;
+}
+
+
+.p p{
+  font-family: Poppins;
+font-weight: 500;
+font-style: Medium;
+font-size: 24px;
+leading-trim: NONE;
+line-height: 100%;
+letter-spacing: 0%;
+text-align: center;
+vertical-align: middle;
+text-transform: capitalize;
+color: #3A7C55;
+padding: 15px 0px;
+margin: 0px 60px;
+line-height: 2rem;
+}
+
+#were h1{
+font-family: Poppins;
+font-weight: 700;
+font-style: Bold;
+font-size: 48px;
+leading-trim: NONE;
+line-height: 100%;
+letter-spacing: 0%;
+vertical-align: middle;
+text-transform: capitalize;
+color: #1D3E2A;
+padding: 20px  0px;
+line-height: 4rem;
+}
+#were p{
+  font-family: Poppins;
+font-weight: 500;
+font-style: Medium;
+font-size: 24px;
+leading-trim: NONE;
+line-height: 100%;
+letter-spacing: 0%;
+vertical-align: middle;
+text-transform: capitalize;
+color:  #3A7C55;
+line-height: 2.5rem;
+}
+.play i{
+  color:white;
+}
